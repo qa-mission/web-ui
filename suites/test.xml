@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="assignment" verbose="1" >
+
+    <parameter name="query"  value="apples"/>
+
+     <test name="Test 1">
+         <classes>
+             <class name="com.qamission.assignment.Task1">
+                 <methods>
+                     <include name="testProductsSorted"/>
+                 </methods>
+             </class>
+         </classes>
+     </test>
+
+     <test name="Test 2">
+         <classes>
+             <class name="com.qamission.assignment.Task2">
+                 <methods>
+                     <include name="testPriceReduction"/>
+                 </methods>
+             </class>
+         </classes>
+     </test>
+
+    <test name="Test 3">
+        <classes>
+            <class name="com.qamission.assignment.Task3">
+                <methods>
+                    <include name="addItemToShoppingCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test 4">
+        <classes>
+            <class name="com.qamission.assignment.Task4">
+                <methods>
+                    <include name="chooseLocation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
