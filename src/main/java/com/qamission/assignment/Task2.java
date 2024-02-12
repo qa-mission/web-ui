@@ -21,7 +21,7 @@ public class Task2 extends BaseTest {
 
         for (Product productOnSale : onSaleProducts) {
             if (productOnSale.isOnSale()) {
-                Assert.assertEquals(productOnSale.getSallingPriceNow().getValue(), productOnSale.getSallingPiceWas().getValue()-productOnSale.getSaveValue(),0.001);
+                Assert.assertEquals(productOnSale.getSellingPriceNow().getValue(), productOnSale.getSellingPiceWas().getValue()-productOnSale.getSaveValue(),0.001);
                 List<Price> comparisonPrices = productOnSale.getComparisonPrices();
                 if (comparisonPrices.size() < 2) continue;
                 Price comPriceLeft = comparisonPrices.get(0);

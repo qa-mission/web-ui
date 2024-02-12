@@ -80,7 +80,6 @@ public abstract class Page {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         String command = "window.scrollBy(0,"+length+")";
         js.executeScript(command, "");
-
     }
 
     public boolean containsText(String text) {
@@ -94,7 +93,4 @@ public abstract class Page {
             e.printStackTrace();
         }
     }
-
-
-
 }

@@ -16,6 +16,6 @@ public class Task3 extends BaseTest {
         String inCartProdName = cart.getProductNameAt(1);
         double inCartProdPrice = cart.getProductPriceAt(1);
         Assert.assertEquals(inCartProdName, productInCart.getProductName(),"Names should match");
-        Assert.assertEquals(inCartProdPrice,productInCart.getSallingPriceNow().getValue(),0.001);
+        Assert.assertEquals(inCartProdPrice,productInCart.getSellingPriceNow().getValue(),0.001);
     }
 }

@@ -3,7 +3,6 @@ package com.qamission.config;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 public class ConfigTests {
     private String resourcePath;
     private Config config;
